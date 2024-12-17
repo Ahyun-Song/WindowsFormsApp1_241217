@@ -46,6 +46,7 @@ namespace WindowsFormsApp1_241217
             //5
             string samsungGalaxy = "삼성 갤럭시";
             string updatedSamsungGalaxy = samsungGalaxy.Insert(3, " 애플");
+            stringArray[4] = updatedSamsungGalaxy;
 
             //6
             string todayHungry = "오늘은 왠지 더 배고프다";
@@ -54,18 +55,30 @@ namespace WindowsFormsApp1_241217
             {
                 string updatedTodayHungry = todayHungry.Remove(index, 1);
             }
+            stringArray[5] = todayHungry;
 
             //7
-            
+            string info = "이름, 나이, 전화번호";
+            string[] splitInfo = info.Split(',');
+            stringArray[6] = "이름";
+            stringArray[7] = "나이";
+            stringArray[8] = "전화번호";
 
             //8
             string nationalAnthem = "우리 나라 만세";
-
             string korea = nationalAnthem.Substring(3, 2);
+            stringArray[9] = korea;
 
-            textBox_print.Text = stringArray[0]+ "\r\n";
-            textBox_print.Text += stringArray[1];
-
+            textBox_print.Text = stringArray[0] + "\r\n";
+            textBox_print.Text += stringArray[1] + "\r\n";
+            textBox_print.Text += stringArray[2] + "\r\n";
+            textBox_print.Text += stringArray[3] + "\r\n";
+            textBox_print.Text += stringArray[4] + "\r\n";
+            textBox_print.Text += stringArray[5] + "\r\n";
+            textBox_print.Text += stringArray[6] + "\r\n";
+            textBox_print.Text += stringArray[7] + "\r\n";
+            textBox_print.Text += stringArray[8] + "\r\n";
+            textBox_print.Text += stringArray[9] + "\r\n";
         }
     }
 }
