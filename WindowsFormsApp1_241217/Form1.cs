@@ -50,12 +50,13 @@ namespace WindowsFormsApp1_241217
 
             //6
             string todayHungry = "오늘은 왠지 더 배고프다";
+            string updatedTodayHungry = "";
             int index = todayHungry.IndexOf("더");
             if (index != -1)
             {
-                string updatedTodayHungry = todayHungry.Remove(index, 1);
+                updatedTodayHungry = todayHungry.Remove(index, 1);
             }
-            stringArray[5] = todayHungry;
+            stringArray[5] = updatedTodayHungry;
 
             //7
             string info = "이름, 나이, 전화번호";
@@ -78,7 +79,7 @@ namespace WindowsFormsApp1_241217
             textBox_print.Text += stringArray[6] + "\r\n";
             textBox_print.Text += stringArray[7] + "\r\n";
             textBox_print.Text += stringArray[8] + "\r\n";
-            textBox_print.Text += stringArray[9] + "\r\n";
+            textBox_print.Text += stringArray[9];
         }
     }
 }
